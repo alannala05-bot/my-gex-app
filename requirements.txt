@@ -2,3 +2,5 @@ FinMind
 streamlit-autorefresh
 pandas
 numpy
+tqdm
+requests
