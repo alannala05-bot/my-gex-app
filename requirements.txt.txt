@@ -1,2 +1,4 @@
 FinMind
 streamlit-autorefresh
+pandas
+numpy
