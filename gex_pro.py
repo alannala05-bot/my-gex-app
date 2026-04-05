@@ -98,7 +98,7 @@ if "last_alert_time" not in st.session_state:
 upper_t = 6.5
 lower_t = -6.5
 is_extreme = score_val >= upper_t or score_val <= lower_t
-is_cooled = (datetime.now() - st.session_state.last_alert_time) > timedelta(minutes=5)
+is_cooled = (datetime.now() - st.session_state.last_alert_time) > timedelta(minutes=1)
 
 if is_extreme and is_cooled:
     alert_type = "🚀 多方強攻" if score_val >= upper_t else "🚨 空方壓制"
